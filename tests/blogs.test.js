@@ -81,7 +81,7 @@ describe('User is not logged in', async () => {
         expect(result).toEqual({ error: 'You must log in!' })
     })
 
-    test.only('User cannot get blog posts', async () => {
+    test('User cannot get blog posts', async () => {
 
         const result = await page.evaluate(
             () => {
